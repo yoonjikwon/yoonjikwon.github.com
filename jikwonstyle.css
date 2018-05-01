@@ -203,7 +203,7 @@ footer {
 
 
 
-@media screen and ( max-width: 1080px ) {
+@media screen and ( max-device-width: 1080px ) {
         #menuposition {
           	width: 100%;
           	min-width: 340px;
@@ -215,7 +215,7 @@ footer {
     }
 
 
-@media screen and ( max-width: 576px ) {
+@media screen and ( max-device-width: 576px ) {
 		#menu {
 			height: 50px;
 		}
