@@ -1,0 +1,265 @@
+
+body {
+	margin: 0;
+	background-color: #fff;
+	font-family: 'Apple SD Gothic Neo',AppleSDGothicNeo,'Malgun Gothic','맑은 고딕',sans-serif;
+	color: #000;
+}
+
+
+
+
+#menu {
+	height: 70px;
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 #999;
+	overflow: visible
+}
+
+#menulogo {
+	width: 94px;
+	height: 70px;
+	margin-right: 30px;
+	float: left;
+	position: relative;
+    background: url("img/toplogo.png");
+    background-size: contain;
+}
+
+#menuposition {
+	width: 1080px;
+	height: 70px;
+	display: inline-block;
+}
+
+
+#menuright {
+	float: right;
+	position: relative;
+}
+
+#menuoff {
+	height: 40px;
+    padding: 25px 10px 0 11px;
+	color: #000;
+	float: left;
+	position: relative;
+	font-size: 16px;
+    line-height: 19px;
+}
+
+#menuon {
+	height: 40px;
+    padding: 25px 10px 0 11px;
+	color: #000;
+	float: left;
+	position: relative;
+	font-size: 16px;
+    line-height: 19px;
+    border-bottom: 5px solid #000;
+	font-weight: 1000;
+}
+
+
+#menuoff:hover {
+	border-bottom: 5px solid #000;
+	font-weight: 1000;
+	color: #000;
+}
+
+
+#menuon:hover {
+	border-bottom: 5px solid #000;
+	font-weight: 1000;
+	color: #000;
+}
+
+
+
+
+#menu a {
+	color: #000;
+}
+
+
+#container {
+	padding-top: 70px;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#contents {
+	display: inline-block;
+	margin:0 auto;
+	max-width: 1080px;
+	font-size: 16px;
+}
+
+#contents h1 {
+	font-weight:1000;
+	font-size:100px;
+	margin: 20px;
+}
+
+#contents a {
+	color: #004ea2;
+	text-decoration:none;
+	border-bottom: solid 2px #f3ff8e;
+}
+
+#contents a:hover {
+	background: #f3ff8e;
+
+}
+
+#textbox {
+	margin:10px;
+}
+
+#textbox img {
+	width: 100%;
+}
+
+#workimgbox {
+	margin:10px;
+}
+
+#workimgbox img {
+	width: 100%;
+	border-radius:10px;
+}
+
+#workimgbox a {
+	text-decoration: none;
+	border: 0;
+}
+
+#workimgbox a:hover {
+	background: #fff;
+}
+
+#workimgbox img:hover {
+	background: #fff;
+	filter:brightness(80%); /*For IE8 and earlier*/
+}
+
+#iconposition {
+	width: 1080px;
+	height: 100px;
+	display: inline-block;
+}
+
+#iconbox {
+	float: center;
+	position: relative;
+	display: inline-block;
+	padding:10px;
+}
+
+#iconbox img {
+	width: 100px;
+}
+
+#iconbox a {
+	text-decoration: none;
+	border: 0;
+}
+
+#iconbox a:hover {
+	background: #fff;
+}
+
+#iconbox img:hover {
+	background: #fff;
+	filter:brightness(200%); /*For IE8 and earlier*/
+}
+
+#mainjw {
+	width: 100%;
+	display: inline-block;
+}
+
+#mainjw img {
+	width: 100%;
+}
+
+
+
+footer {
+	padding: 100px 0 20px 0;
+	color: #aaa;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+@media ( max-width: 1080px ) {
+        #menuposition {
+          	width: 100%;
+          	min-width: 340px;
+        }
+        #iconposition {
+          	width: 100%;
+          	min-width: 340px;
+        }
+    }
+
+
+@media ( max-width: 576px ) {
+		#menu {
+			height: 50px;
+		}
+        #menuposition {
+          	width: 100%;
+          	min-width: 340px;
+          	height: 50px;
+        }
+        #iconposition {
+        	width: 100%;
+          	min-width: 340px;
+          	height: 50px;
+        }
+        #iconbox {
+        	padding: 5px;
+        }
+        #iconbox img {
+			width: 50px;
+		}
+        #menuoff {
+			height: 30px;
+    		padding: 15px 10px 0 11px;
+			font-size: 14px;
+		    line-height: 19px;
+		}
+		#menuon {
+			height: 30px;
+    		padding: 15px 10px 0 11px;
+			font-size: 14px;
+		    line-height: 19px;
+		}
+		#menulogo {
+			width: 70px;
+			height: 50px;
+			margin-right: 30px;
+		}
+		#container {
+			padding-top: 50px;
+		}
+        #contents {
+        	font-size: 14px;
+        }
+        #contents h1 {
+        	font-size: 60px;
+        	margin: 10px;
+        }
+    }
