@@ -279,6 +279,7 @@ footer {
 		}
 		#textbox {
 			width: 100%;
+			margin: 0;
 		}
 		#textboxleft {
 			width: 90%;
