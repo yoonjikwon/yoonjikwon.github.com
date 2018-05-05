@@ -125,6 +125,8 @@ body {
 
 #textbox {
 	margin:10px;
+	width:70%;
+	display: inline-block;
 }
 
 #textbox img {
