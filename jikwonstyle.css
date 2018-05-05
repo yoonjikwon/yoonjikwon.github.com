@@ -102,7 +102,7 @@ body {
 #contents {
 	display: inline-block;
 	margin:0 auto;
-	max-width: 1080px;
+	width: 1080px;
 	font-size: 16px;
 }
 
@@ -208,7 +208,16 @@ footer {
 
 
 
-
+@media only screen and ( max-width: 1080px ) {
+        #menuposition {
+          	width: 100%;
+          	min-width: 340px;
+        }
+        #iconposition {
+          	width: 100%;
+          	min-width: 340px;
+        }
+    }
 
 
 @media only screen and (max-width: 568px) and (-webkit-device-pixel-ratio: 1.5)
