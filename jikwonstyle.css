@@ -274,6 +274,9 @@ footer {
 		#container {
 			padding-top: 50px;
 		}
+		#contents h1{
+			font-size: 3em;
+		}
 		#textbox {
 			width: 100%;
 		}
