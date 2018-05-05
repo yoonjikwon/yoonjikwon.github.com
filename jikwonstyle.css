@@ -215,11 +215,7 @@ footer {
     }
 
 
-@media only screen and (min-device-pixel-ratio: 1.5),
-						(min-device-pixel-ratio: 2),
-						(min-device-pixel-ratio: 3),
-						(min-resolution: 192dpi),
-						(min-resolution: 288dpi),
+@media only screen and (max-width: 360px)
 		 {
 		#menu {
 			height: 50px;
