@@ -274,5 +274,11 @@ footer {
 		#container {
 			padding-top: 50px;
 		}
+		#textbox {
+			width: 100%;
+		}
+		#textboxleft {
+			width: 90%;
+		}
 
     }
