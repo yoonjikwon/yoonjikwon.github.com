@@ -164,11 +164,11 @@ body {
 	float: center;
 	position: relative;
 	display: inline-block;
-	padding:10px;
+	width: 90px;
 }
 
 #iconbox img {
-	width: 100px;
+	width: 100%;
 }
 
 #iconbox a {
@@ -238,11 +238,8 @@ footer {
           	height: 50px;
         }
         #iconbox {
-        	padding: 2px;
+        	width: 40px;
         }
-        #iconbox img {
-			width: 40px;
-		}
         #menuoff {
 			height: 30px;
     		padding: 15px 10px 0 11px;
