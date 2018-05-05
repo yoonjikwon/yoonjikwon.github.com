@@ -215,7 +215,7 @@ footer {
     }
 
 
-@media only screen and (max-width: 360px)
+@media only screen and (max-width: 600px)
 		 {
 		#menu {
 			height: 50px;
