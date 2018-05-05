@@ -124,10 +124,22 @@ body {
 }
 
 #textbox {
-	margin:10px;
-	width:70%;
+	margin: 10px;
+	width: 70%;
 	display: inline-block;
 }
+
+#textboxleft {
+	margin: 10px;
+	width: 70%;
+	text-align: left;
+	display: inline-block;
+}
+
+#textboxleft h1 {
+	text-align: center;
+}
+
 
 #textbox img {
 	width: 100%;
