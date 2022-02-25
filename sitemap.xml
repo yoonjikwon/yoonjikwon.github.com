@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemap.org/sitemap/0.9">
 	<url>
-		<log>http://yoonjikwon.cf/</log>
-		<lastmod>2018-05-06</lastmod>
+		<loc>http://yoonjikwon.github.com/</loc>
+		<lastmod>2022-02-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
 	<url>
-		<log>http://yoonjikwon.cf/work.html/</log>
-		<lastmod>2018-05-06</lastmod>
+		<loc>http://yoonjikwon.github.com/work.html/</loc>
+		<lastmod>2022-02-25</lastmod>
 		<changefreq>monthly</changefreq>
-		<priority>1.0</priority>
+		<priority>0.85</priority>
 	</url>
 	<url>
 	<url>
-		<log>http://yoonjikwon.cf/contact.html</log>
-		<lastmod>2018-05-06</lastmod>
+		<loc>http://yoonjikwon.github.com/news.html</loc>
+		<lastmod>2022-02-25</lastmod>
 		<changefreq>monthly</changefreq>
-		<priority>1.0</priority>
+		<priority>0.85</priority>
 	</url>
 	<url>
