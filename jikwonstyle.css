@@ -21,7 +21,7 @@ body {
 	top: 0px;
 	left: 0px;
 	text-align: center;
-	box-shadow: 0 0 20px 0 #999;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, .50);
 	overflow: visible
 }
 
@@ -147,7 +147,7 @@ body {
 }
 
 #textboxleft {
-	margin: 10px;
+	margin: 0px 0px 2em 0px;
 	width: 70%;
 	text-align: left;
 	display: inline-block;
@@ -160,22 +160,6 @@ body {
 
 #textbox img {
 	width: 100%;
-}
-
-
-#workimgbox {
-	margin:10px;
-}
-
-#workimgbox img {
-	width: 100%;
-	border-radius:10px;
-}
-
-
-#workimgbox img:hover {
-	background: #fff;
-	filter:brightness(80%); /*For IE8 and earlier*/
 }
 
 #iconposition {
@@ -226,16 +210,31 @@ body {
 	cursor: pointer;
 }
 
+#noticebox {
+	margin: 0px 0px 20px 0px;
+	padding: 20px;
+	color: #fff;
+	font-weight: 1000;
+	background-color: #004ea2;
+}
+
+
+
 #p1 {
 	font-weight: 1000;
 	color: #000;
 	font-size: 1.2em;
-	line-height: 150%;
+	line-height: 120%;
 }
 
 #p2 {
 	color: #000;
 	line-height: 150%;
+}
+
+#p2 a {
+	color: #004ea2;
+	border-bottom: 1px solid;
 }
 
 #p3 {
