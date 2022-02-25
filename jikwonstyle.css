@@ -13,7 +13,6 @@ body {
 
 
 
-
 #menu {
 	height: 70px;
 	width: 100%;
@@ -112,16 +111,34 @@ body {
 	margin: 20px;
 }
 
-#contents a {
-	color: #004ea2;
+#contents h2 {
+	font-weight:1000;
+	font-size:3em;
+	margin: 20px;
+}
+
+#contents a:hover, a:visited, a:link, a:active {
 	text-decoration:none;
-	border-bottom: solid 2px #f3ff8e;
 }
 
-#contents a:hover {
-	background: #f3ff8e;
-
+#contents .button {
+    background-color: #efefef;
+    width: 80%;
+    border: none;
+    color: #004ea2;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
 }
+
+#contents .button:hover{
+	color: #ffffff;
+	background: #004ea2;
+}
+
+
 
 #textbox {
 	margin: 10px;
@@ -145,6 +162,7 @@ body {
 	width: 100%;
 }
 
+
 #workimgbox {
 	margin:10px;
 }
@@ -154,14 +172,6 @@ body {
 	border-radius:10px;
 }
 
-#workimgbox a {
-	text-decoration: none;
-	border: 0;
-}
-
-#workimgbox a:hover {
-	background: #fff;
-}
 
 #workimgbox img:hover {
 	background: #fff;
@@ -206,6 +216,28 @@ body {
 
 #mainjw img {
 	width: 100%;
+}
+
+#newsbox {
+	margin: 0px 20px;
+	text-align: left;
+	display: inline-block;
+	border-bottom: 1px solid #cccccc;
+	cursor: pointer;
+}
+
+#p1 {
+	font-weight: 1000;
+	color: #000;
+	font-size: 1.2em;
+}
+
+#p2 {
+	color: #000;
+}
+
+#p3 {
+	color: #aaaaaa;
 }
 
 
@@ -276,6 +308,9 @@ footer {
 		}
 		#contents h1{
 			font-size: 3em;
+		}
+		#contents h2{
+			font-size: 1.5em;
 		}
 		#textbox {
 			width: 100%;
