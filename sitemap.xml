@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemap.org/sitemap/0.9">
 	<url>
 		<loc>http://yoonjikwon.github.com/</loc>
-		<lastmod>2022-02-25</lastmod>
+		<lastmod>2023-05-26</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
+	
 	<url>
-	<url>
-		<loc>http://yoonjikwon.github.com/work.html/</loc>
-		<lastmod>2022-02-25</lastmod>
+		<loc>http://yoonjikwon.github.com/programs.html/</loc>
+		<lastmod>2023-05-26</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.85</priority>
 	</url>
+	
 	<url>
-	<url>
-		<loc>http://yoonjikwon.github.com/news.html</loc>
-		<lastmod>2022-02-25</lastmod>
+		<loc>http://yoonjikwon.github.com/contents.html</loc>
+		<lastmod>2023-05-26</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.85</priority>
 	</url>
+
 	<url>
+		<loc>http://yoonjikwon.github.com/news.html/</loc>
+		<lastmod>2023-05-26</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.85</priority>
+	</url>
