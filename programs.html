@@ -33,10 +33,42 @@
 		  	<div class="youtubewrap">
 			  	<div class="youtubebox">
 			  		<div class="youtubecontents">
-			  			<iframe height="100%" width="100%" src="https://www.youtube.com/embed/videoseries?list=PLqKeI6q5eRX_oqEZi_VpNWA_kSAMxOwi3&wmode=opaque&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-			  		</div>
-			  	</div>
-			  </div>
+			  			<div id="player"></div>
+			  			<script>
+					      var tag = document.createElement('script');
+
+					      tag.src = "https://www.youtube.com/iframe_api";
+					      var firstScriptTag = document.getElementsByTagName('script')[0];
+					      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+					      var player;
+					      function onYouTubeIframeAPIReady() {
+					        player = new YT.Player('player', {
+					          height: '100%',
+					          width: '100%',
+					          playerVars:
+					          {
+					          		listType: 'playlist',
+					          		list: 'PLqKeI6q5eRX_oqEZi_VpNWA_kSAMxOwi3',
+					          		controls: 1,
+					          		loop: 1
+					          },
+					          events: {
+					            'onReady': onPlayerReady,
+					          }
+					        });
+					      }
+
+					      function onPlayerReady(event) {
+					      	player.setShuffle(true);
+					      	player.playVideoAt(0);
+					      	event.target.setVolume(0);
+					      	event.target.playVideo(1);
+					      }
+    				</script>
+		 			 </div>
+					</div>
+				</div>
 			  <div class="history" style="padding-top: 20px;">
 			  	<p class="list"><mark>KBS1</mark><i> 선거제도 공론화 500인 회의</i> 연출 (2023)</p>
 			    <p class="list"><mark>KBS1</mark><i> 종로사진관</i> 연출 (2022)</p>
