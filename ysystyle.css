@@ -3,26 +3,21 @@
 body {
 	margin: 0;
 	background-color: #000;
-	color: #fff;
-}
+	color: #fff;}
 
-.contents {
-	max-width: 640px;
-	margin: 0 auto;}
-
-.contents h1 {
+h1 {
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 900;
 	font-size: 35px;
 	margin: 10px 0;}
 
-.contents h3 {
+h3 {
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 700;
 	font-size: 25px;
 	margin: 10px 0;}
 
-.contents p {
+p {
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
@@ -30,7 +25,7 @@ body {
 	text-align: justify;
 	word-break: break-all;}
 
-.contents p.year {
+p.year {
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 300;
 	font-size: 25px;
@@ -38,7 +33,7 @@ body {
 	text-align: justify;
 	word-break: break-all;}
 
-.contents p.list {
+p.list {
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
@@ -49,24 +44,24 @@ body {
 	text-indent: -65px;
 }
 
-.contents a.outlinkitalic {
+a.outlinkitalic {
 	box-shadow: inset 0 -7px 0 0 #004ea2;
 	line-height: 21px;
 	font-style:italic;
 	padding: 0 3px;}
 
-.contents a.aarticle {
+a.aarticle {
 	text-decoration: none;
 	cursor: pointer;}
 
-.contents i {
+i {
 	padding: 0 3px;}
 
-.contents ul {
+ul {
 	margin: 0;
 	padding: 0 0 0 15px;}
 
-.contents li {
+li {
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
@@ -74,10 +69,10 @@ body {
 	text-align: justify;
 	word-break: break-all;}
 
-.contents li::marker {
+li::marker {
 	content: '- ';}
 
-.contents mark {
+mark {
   background-color: #fff;
   color: #000;
   border-radius: 7px;
@@ -89,7 +84,7 @@ body {
 
 .container {
 	margin: 0;
-	padding: 80px 20px 20px 20px;
+	padding: 80px 20px 0 20px;
 	min-width: 250px;}
 
 /* 반응형 메뉴 데스크톱 */
@@ -99,13 +94,36 @@ body {
 		top:0;
 		left:0;
 		width: 100%;
-		height: 60px;
+		height: 80px;
 		background-color: #000;
 		margin: 0;
 		padding: 0;
 		text-align:center;
 		border-bottom: 1px solid #555;
 		z-index:2}
+
+	.menulogocirclemobile {
+		display: none;}
+
+	.menulogocircle {
+		float: left;
+		width: 50px;
+		height: 50px;
+		border-radius: 70%;
+		overflow: hidden;
+		margin-top: 15px;
+		margin-left: 20px;
+		padding: 0;
+		cursor: pointer;}
+
+	.menulogotext {
+		float: left;
+		height: 40px;
+		margin: 20px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-weight: 300;
+		font-size: 25px;
+		cursor: pointer;}
 
 	.menuhamburger {
 		display: none;}
@@ -119,15 +137,20 @@ body {
 	.openmenu {
 		position: fixed;
 		top:0;
-		left:0;
 		width: 100%;
-		height: 26px;
-		z-index: 3;
-		margin: 17px 0 17px -40px;}
+		max-width: 800px;
+		height: 80px;
+		margin-left: 50%;
+		transform: translate(-50%, 0);
+		z-index: 3;}
+
+	.openmenu ul {
+		float: right;
+		margin: 0 auto;
+		padding-top: 28px;}
 
 	.openmenu li {
 		display:inline-block;
-		vertical-align:middle;
 		margin: 0;
 		padding: 0 20px;
 		list-style: none;
@@ -140,35 +163,72 @@ body {
 		text-decoration: none;
 		cursor: pointer;}
 
+	.openmenu li.homelink {
+		display: none;}
+
 	.opener {
 		display: none;}
+
+	.contents {
+		max-width: 640px;
+		margin: 20px auto;}
+
 }
 /* 반응형 메뉴 데스크톱 끝 */
 
 
 /* 반응형 메뉴 모바일 시작 */
-@media screen and (max-width:767px) {
+@media screen and (max-width:767.9px) {
 	.menubar {
-		margin: 0;
-		padding: 0;}
-
-	.menuhamburger {
 		position: fixed;
-		top: 0;
-		left: 0;
-		display:block;
+		top:0;
+		left:0;
 		width: 100%;
 		height: 60px;
+		background-color: #000;
+		margin: 0;
+		padding: 0;
+		text-align:center;
+		border-bottom: 1px solid #555;
+		z-index:2;}
+
+	.menulogocirclemobile {
+		position: fixed;
+		top: 10px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 40px;
+		height: 40px;
+		border-radius: 70%;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
 		cursor: pointer;
-		z-index: 4;
-		background-color: #000;}
+		z-index: 4}
+
+	.menulogocircle {
+		display: none;}
+
+	.menulogotext {
+		display: none;}
+
+	.menuhamburger {
+		float: right;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 60px;
+		height: 60px;
+		cursor: pointer;
+		z-index: 5;}
 
 	.hamburgerwrapper {
 		float: right;
 		position: relative;
 		width: 24px;
 		height: 24px;
-		padding: 18px;}
+		padding: 18px;
+		z-index: 5;}
 
 	.hamburgerline {
 		background:#fff;
@@ -176,20 +236,21 @@ body {
 		width: 25px;
 		height: 4px; 
 		border-radius: 2px;
-		position: relative;}
+		position: relative;
+		z-index: 5;}
 
 	.openmenu {
 		margin: 0;
-		padding: 0 20px 20px 20px;
+		padding: 50px 20px 20px 20px;
 		display:none;
 		width: 100%;
 		background-color: #000;
 		border-bottom: 1px solid #555;
 		position: fixed;
-		top: 60px;
+		top: 0;
 		left: 100%;
 		transform: translate(-100%, 0);
-		z-index: 3;}
+		z-index: 4;}
 
 	.openmenu li {
 		margin: 10px 0;
@@ -204,11 +265,22 @@ body {
 		text-decoration: none;
 		cursor: pointer;}
 
+	.openmenu li.homelink {
+		margin: 10px 0;
+		list-style: none;
+		text-align: right;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-weight:700;
+		font-size:25px;}
+
 	.opener {
 		display: none;
 		margin: 0;}
 
 	.opener:checked ~ .openmenu {display:block;}
+
+	.contents {
+		margin: 0 0 20px 0;}
 }
 /* 반응형 메뉴 모바일 끝 */
 
@@ -284,7 +356,7 @@ body {
 
 
 footer {
-	margin: 30px 10px 10px 10px}
+	margin: 60px 10px 0 10px}
 
 .copyright {
 	margin: 0;}
