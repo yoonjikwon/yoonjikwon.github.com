@@ -12,7 +12,30 @@
 		  <header>
 		  	<div class="menubar">
 		  		<a href="index.html">
+		  			<div class="menulogocirclemobile">
+		    			<img class="profileimg" src="img/profileimg.png">
+						</div>
 					</a>
+					<script> 
+						$(document).ready(function(){
+							$(".menulogocirclemobile").hide(); // 탑 버튼 숨김 	
+							$(function () {
+								$(window).scroll(function () {
+									if ($(this).scrollTop() > 170) { // 스크롤 내릴 표시
+										$('.menulogocirclemobile').fadeIn();
+									}else {
+										$('.menulogocirclemobile').fadeOut();
+									}
+								});     
+								$('.menulogocirclemobile').click(function () {
+									$('body,html').animate({
+										scrollTop: 0
+									}, 800);  // 탑 이동 스크롤 속도
+										return false;
+								});
+							});
+						});	
+						</script>
 		  		<botton class="menuhamburger">
 		  			<div class="hamburgerwrapper">
 			  			<div class="hamburgerline"></div>
