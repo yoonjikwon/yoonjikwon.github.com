@@ -4,21 +4,24 @@
   	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user0scalable=no" />
   	<title>윤선영 ─ 윤직원</title>
 		<link rel="stylesheet" type="text/css" href="ysystyle.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<link rel="shortcut icon" href="img/profile_NdS_icon.ico">
   </head>
   <body oncontextmenu="return false;" ondragstart="return false" onselectstart="return false">
   	<div class="container">
 		  <header>
-		  	<nav class="menubar">
-		  		<label class="menuhamburger" for="opener">
+		  	<div class="menubar">
+		  		<a href="index.html">
+					</a>
+		  		<botton class="menuhamburger">
 		  			<div class="hamburgerwrapper">
 			  			<div class="hamburgerline"></div>
 			  			<div class="hamburgerline"></div>
 			  			<div class="hamburgerline"></div>
 			  		</div>
-		  		</label>
-		  		<input class="opener" type="checkbox" id="opener">
-		  		<div class="openmenu">
+		  		</botton>
+		  		<div class="overlay"></div>
+		  		<nav class="openmenu">
 		  			<a href="index.html">
 				  		<div class="menulogocircle">
 		    				<img class="profileimg" src="img/profileimg.png">
@@ -29,15 +32,29 @@
 								윤<font color="#999">직원</font>선영
 							</div>
 						</a>
+						<div class="xwrapper"><div class="xbotton"></div></div>
 			  		<ul>
 			  			<li class="homelink"><a href="index.html">처음으로</a></li>
 			  			<li><a href="programs.html">TV 프로그램</a></li>
 			  			<li><a href="contents.html">만화/캐릭터</a></li>
 			  			<li><a href="books.html">도서</a></li>
-			  			<li><a href="news.html">인터뷰</a></li>
+			  			<li style="margin-bottom: 30px;"><a href="news.html">인터뷰</a></li>
 			  		</ul>
-		  		</div>
-		  	</nav>
+		  		</nav>
+		  	</div>
+		  	<script>
+					$('.menuhamburger').on('click', function () {
+				    $('.openmenu').addClass('active');
+				    $('.overlay').fadeIn();});
+
+					$('.overlay').on('click', function () {
+			   	 $('.openmenu').removeClass('active');
+			   	 $('.overlay').fadeOut();});
+
+					$('.xbotton').on('click', function () {
+			   	 $('.openmenu').removeClass('active');
+			   	 $('.overlay').fadeOut();});
+				</script>
 		  </header>
 		  <div class="contents">
 		  	<div class="profilecircle">

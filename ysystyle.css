@@ -91,8 +91,8 @@ mark {
 @media screen and (min-width: 768px) {
 	.menubar {
 		position: fixed;
-		top:0;
-		left:0;
+		top: 0;
+		left: 0;
 		width: 100%;
 		height: 80px;
 		background-color: #000;
@@ -100,7 +100,15 @@ mark {
 		padding: 0;
 		text-align:center;
 		border-bottom: 1px solid #555;
-		z-index:2}
+		z-index:2;}
+
+	.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    display: none;}
 
 	.menulogocirclemobile {
 		display: none;}
@@ -181,8 +189,8 @@ mark {
 @media screen and (max-width:767.9px) {
 	.menubar {
 		position: fixed;
-		top:0;
-		left:0;
+		top: 0;
+		right: 0;
 		width: 100%;
 		height: 60px;
 		background-color: #000;
@@ -190,7 +198,7 @@ mark {
 		padding: 0;
 		text-align:center;
 		border-bottom: 1px solid #555;
-		z-index:2;}
+		z-index: 2;}
 
 	.menulogocirclemobile {
 		position: fixed;
@@ -241,43 +249,82 @@ mark {
 
 	.openmenu {
 		margin: 0;
-		padding: 50px 20px 20px 20px;
-		display:none;
+		padding: 0;
 		width: 100%;
 		background-color: #000;
 		border-bottom: 1px solid #555;
 		position: fixed;
-		top: 0;
-		left: 100%;
-		transform: translate(-100%, 0);
-		z-index: 4;}
+		top: -500px;
+		left: 0;
+		z-index: 6;
+		transition: all 0.3s;}
+
+  .openmenu.active {
+    top: 0;
+  	left: 0}
+
+	.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    display: none;}
+
+  .xwrapper {
+  	width: 100%;
+  	height: 60px;}
+
+ 	.xbotton {
+		float: right;
+		position: relative;
+		width: 30px;
+		height: 40px;
+		padding: 20px 20px 0 20px;
+	  cursor: pointer;}
+
+	.xbotton:before, .xbotton:after {
+		position: absolute;
+		background-color: #fff;
+		content:' ';
+		height: 30px;
+		width: 4px;}
+
+	.xbotton:before {
+		transform: rotate(45deg);}
+
+	.xbotton:after {
+		transform: rotate(-45deg);}
+
+  .openmenu ul {
+  	position: relative;
+  	list-style-type: none;
+  	padding: 0;}
 
 	.openmenu li {
-		margin: 10px 0;
+		margin: 10px 20px;
 		list-style: none;
 		text-align: right;
 		font-family: 'Noto Sans KR', sans-serif;
 		font-weight:700;
 		font-size:25px;}
+
+	.openmenu li::marker {
+		content: '';}
 
 	.openmenu a {
 		color: #fff;
 		text-decoration: none;
-		cursor: pointer;}
+		cursor: pointer;
+		list-style: none;}
 
 	.openmenu li.homelink {
-		margin: 10px 0;
+		margin: 10px 20px;
 		list-style: none;
 		text-align: right;
 		font-family: 'Noto Sans KR', sans-serif;
 		font-weight:700;
 		font-size:25px;}
-
-	.opener {
-		display: none;
-		margin: 0;}
-
-	.opener:checked ~ .openmenu {display:block;}
 
 	.contents {
 		margin: 0 0 20px 0;}
